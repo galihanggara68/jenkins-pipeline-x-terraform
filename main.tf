@@ -1,5 +1,7 @@
 module "managed-k8s" {
-    source              = "./modules/managed-k8s"            
+    source              = "./modules/managed-k8s"
+
+    k8s_name_prefix     = var.k8s_name_prefix  
 
     vpc_cidr_block      = var.vpc_cidr_block
     vswitch_cidr_block  = var.vswitch_cidr_block
