@@ -19,6 +19,6 @@ CUSTOMBIN=$(pwd)/.bin
 #Add custom bin path to PATH environment
 export PATH=$CUSTOMBIN:$PATH
 
-$CUSTOMBIN/tfswitch -u -b $CUSTOMBIN/terraform
+$CUSTOMBIN/tfswitch 1.1.5 -b $CUSTOMBIN/terraform
 
 terraform $*
