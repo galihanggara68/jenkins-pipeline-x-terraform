@@ -1,3 +1,7 @@
+terraform {
+  required_version = "1.1.5"
+}
+
 module "managed-k8s" {
     source              = "./modules/managed-k8s"
 
