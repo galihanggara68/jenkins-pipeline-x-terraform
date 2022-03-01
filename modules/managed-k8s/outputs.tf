@@ -21,6 +21,10 @@ output "this_vpc_id" {
   value       = concat(alicloud_cs_managed_kubernetes.default.*.vpc_id, [""])[0]
 }
 
+output "this_resource_group_id" {
+  value = alicloud_vpc.default.resource_group_id
+}
+
 output "this_vswitch_ids" {
   description = "List ID of the VSwitches."
   value       = alicloud_cs_managed_kubernetes.default.*.worker_vswitch_ids

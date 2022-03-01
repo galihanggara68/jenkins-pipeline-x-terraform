@@ -31,6 +31,10 @@ variable "vswitch_cidr_block" {
   default = "10.1.1.0/24"
 }
 
+variable "resource_group_id" {
+  default = "rg-aek2kdtpdwb7qfi"
+}
+
 variable "pod_cidr" {
   default = "172.20.0.0/16"
 }

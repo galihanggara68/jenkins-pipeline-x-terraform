@@ -29,3 +29,6 @@ output "this_security_group_id" {
   description = "ID of the Security Group used to deploy kubernetes cluster."
   value       = module.managed-k8s.this_security_group_id
 }
+output "this_resource_group_id" {
+  value = module.managed-k8s.this_resource_group_id
+}

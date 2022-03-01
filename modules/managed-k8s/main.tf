@@ -20,6 +20,7 @@ data "alicloud_zones" "default" {
 resource "alicloud_vpc" "default" {
   vpc_name       = local.new_vpc_name
   cidr_block     = var.vpc_cidr_block
+  resource_group_id = var.resource_group_id
 }
 # The vSwitches.
 resource "alicloud_vswitch" "vswitches" {
