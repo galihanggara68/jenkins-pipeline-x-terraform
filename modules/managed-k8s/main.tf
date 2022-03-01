@@ -36,6 +36,7 @@ resource "alicloud_log_project" "log" {
 }
 # The managed Kubernetes cluster.
 resource "alicloud_cs_managed_kubernetes" "default" {
+  resource_group_id = var.resource_group_id
   # The name of the cluster.
   name                      = local.k8s_name
   # The vSwitches of the new Kubernetes cluster. Specify the IDs of one or more vSwitches. The vSwitches must be in the zone specified by availability_zone.
