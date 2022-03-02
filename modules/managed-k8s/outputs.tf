@@ -33,3 +33,6 @@ output "this_security_group_id" {
   description = "ID of the Security Group used to deploy kubernetes cluster."
   value       = concat(alicloud_cs_managed_kubernetes.default.*.security_group_id, [""])[0]
 }
+output "this_worker_ram_role_name" {
+  value   = alicloud_cs_managed_kubernetes.default.*.worker_ram_role_name
+}

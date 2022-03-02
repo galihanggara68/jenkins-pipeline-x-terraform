@@ -32,3 +32,6 @@ output "this_security_group_id" {
 output "this_resource_group_id" {
   value = module.managed-k8s.this_resource_group_id
 }
+output "this_worker_ram_role_name" {
+  value = module.managed-k8s.this_worker_ram_role_name
+}

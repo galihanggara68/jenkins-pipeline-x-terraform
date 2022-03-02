@@ -47,6 +47,8 @@ resource "alicloud_cs_managed_kubernetes" "default" {
   worker_instance_types     = [data.alicloud_instance_types.default.instance_types[0].id]
   # The total number of worker nodes in the Kubernetes cluster. Default value: 3. Maximum value: 50.
   worker_number             = var.worker_number
+
+  platform                 = "AliyunLinux"
   # The password that is used to log on to the nodes through SSH.
   password                  = var.password
   # The CIDR block of the pods. When cluster_network_type is set to flannel, you must set this parameter. It cannot be the same as the CIDR block of the VPC or the CIDR blocks of the Kubernetes clusters in the VPC. It cannot be modified after the cluster is created. Maximum number of hosts in the cluster: 256.
