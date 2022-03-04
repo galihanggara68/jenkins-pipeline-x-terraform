@@ -6,6 +6,7 @@ module "managed-k8s" {
     source              = "./modules/managed-k8s"
 
     k8s_name_prefix     = var.k8s_name_prefix  
+    resource_group_id   = var.resource_group_id
 
     vpc_cidr_block      = var.vpc_cidr_block
     vswitch_cidr_block  = var.vswitch_cidr_block

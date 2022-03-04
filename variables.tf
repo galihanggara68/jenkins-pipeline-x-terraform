@@ -38,3 +38,7 @@ variable "pod_cidr" {
 variable "service_cidr" {
   default = "172.21.0.0/20"
 }
+
+variable "resource_group_id" {
+  default = "rg-aek2kdtpdwb7qfi"
+}
